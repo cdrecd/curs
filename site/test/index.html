@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatibe" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 3</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container"> <!-- The class 'container-fluid' stretches to the full width of the browser window (minus some margins) and automatically adjusts its width as you change the width of the browser. -->
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg"> <!-- floats left and shows when screen size is large and medium -->
+						<div id="logo-img" alt="Logo image"></div>
+					</a>
+					<div class="navbar-brand">
+						<a href="index.html"><h1>Jazz is Life</h1></a>
+						<p>
+							<img src="/images/res-small-sax.jpg" width="25px" heigh="25px" alt="Saxophone image">
+							<span>Music Rules</span>
+						</p>
+					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+				</div>
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="menu-categories.html">
+								<span class="glyphicon glyphicon-music"></span><br class="hidden-xs">Products</a> <!-- glyphicon glyphicon-cutlery gives a font icon - knife and fork. glyphicon-cutlery - a music icon and hidden-xs orders to get it away when screen size is extra small -->
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-certificate"></span>
+								<br class="hidden-xs">Award</a>
+						</li>
+						<li id="phone" class="hidden-xs">
+							<a href="tel:123243234"> <!-- will try to call -->
+								<span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">*Call us</a>
+						</li>
+					</ul> 
+				</div>
+			</div>
+
+		</nav>
+	</header>
+	<!-- copied -->
+	<div id="call-btn" class="visible-xs">
+		<a class="btn" href="tel:1234-1234-1234">
+			<span class="glyphicon glyphicon-earphone"></span>
+			1234-1234-1234
+		</a>
+	</div>
+	<div id="xs-deliver" class="text-center visable-xs">*Call Us</div>
+	<script src="js/jq_2.2.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+
+</body>
+</html>

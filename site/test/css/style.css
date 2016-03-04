@@ -1,0 +1,120 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	font-family: 'Oxygen', sans-serif;
+	background-color: #FAF9D2;
+}
+
+/*HEADER*/
+#header-nav {
+	background-color: #D2D3FA;
+	border-radius: 0;
+	border: 0;
+	height: 150px;
+}
+/*logo image*/
+#logo-img {
+	background: url('../images/res_sax2.jpg') no-repeat;
+	width: 150px;
+	height: 99px;
+	margin: 10px 15px 10px 0px;
+	border-radius: 45px;
+}
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+/*jazz is life*/
+.navbar-brand h1 { 
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+	font-size: 1.7em;
+	color: #0505A8;
+	text-transform: capitalize;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+/*jazz is life*/
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+/*music rules* and its image*/
+.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 10px;
+}
+/*music rules*/
+.navbar-brand p span {
+	vertical-align: middle;
+}
+
+.glyphicon {
+	color: #730F41;
+	font-size: 1em;
+	padding-right: 5px;
+
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #0F7341;
+	text-align: center;
+
+}
+#nav-list a:hover{
+	font-size: 22px;
+}
+
+
+/*glyphicons*/
+#nav-list a span {
+	font-size: 1.5em;
+
+}
+#phone {
+	margin-top: 0px;
+	margin-left: 125px;
+}
+#phone a {
+	text-align: right;
+	padding-bottom: 10px;
+}
+/*#phone div {
+	color: #0F7341;
+	text-align: right;
+}
+*/
+
+/*toogle bar color*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid green;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+
+/*large devices only*/
+@media (min-width: 1200px){
+
+}
+/*medium devices only*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/*small devices only*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/*extra devices only*/
+@media (max-width: 767px) {
+
+}
