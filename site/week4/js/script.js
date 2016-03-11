@@ -49,7 +49,7 @@ console.log(facebook);*/
 //Functions are first class dataobjects.
 //Functions ARE objects.
 
-function multi (x, y) {
+/*function multi (x, y) {
 	return x * y;
 };
 
@@ -61,7 +61,75 @@ console.log(multi.version);
 var a = multi.version;
 console.log(multi.version, a);
 
-//
+// Function factory
+
+function makeMultiplier(multiplier) {
+	var myFunc = function (x) {
+		return multiplier * x;
+	};
+	return myFunc;
+}
+
+var multiplyBy3 = makeMultiplier(3);
+console.log(multiplyBy3(10));
+
+// Passing function as arguments.
+
+function doOperation(x, operation) {
+	return operation (x);
+}
+
+var result = doOperation(5, multiplyBy3);
+console.log(result);*/
+
+
+//Passing Variables by Value
+/*var a = 7;
+var b = a;
+console.log(a == b);
+var a = 9;
+console.log(a == b);
+
+//Passing Variables by Reference
+var c = {x: 7};
+var d = c;
+console.log(c, d); // prints out whole object
+console.log(c.x, d.x);
+
+d.x = 11; // monacems Secvlis c.d - sTvisac.
+console.log(c, d); 
+console.log(c.x, d.x);*/
+
+/*var a = 5;
+var b = "344";
+var g = (a + b);// = 5334
+console.log(g, a + b + "rev");*/
+
+/*function changePrimitive(primvalue) {
+	console.log("in changePrimitive...");
+	console.log("before:");
+	console.log(primvalue);
+
+	primvalue = 5;
+	console.log("after");
+	console.log(primvalue); //it prints nothing if ull not call function
+}
+
+var value = 7;
+changePrimitive(value);
+console.log("after changePrimitive, orig value:");
+console.log(value);*/
+
+
+function test() {
+	console.log(this);
+	this.myName = "arcvin";
+}
+test();
+console.log(window.myName);
+
+
+
 
 
 
