@@ -1,0 +1,42 @@
+// this is used when client(browser) is connected to the server(web-site)
+GET /index.html?firstName=Yaakov HTTP/1.1 
+Method, URI String, Query String HTTP Version
+
+1.  GET - retieves the resource. Data is passed to server as part of URI.
+1a. POST - sends data to server in order to be processed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -315,32 +315,48 @@ johnGreeter.sayHi();
 */
 
 //Dom manipulation
-// in HTML javascript code is executed exactly where it is.
+// in HTML javascript code is executed exactly where it is located.
 
 //console.log(document instanceof HTMLDocument); // checks of document is instance of HTMLDocument.
 
-function sayHello () {
-	var name = document.getElementById("name").value // value is only for input elements
-	var message = "Hello " + name;
+//because of DOMContentLoaded, this function will happen before any images or any CSS or any other script is loaded
+/*document.addEventListener("DOMContentLoaded", 
+	function (event) {
+		function sayHello (event) {
+			console.log(event);
+			this.textContent = "Said it!";
+			var name = document.getElementById("name").value // value is only for input elements
+			var message = "Hello " + name;
 
-	document.getElementById("content").textContent = message; // textContent is a property to be able to insert text inside of an element.
-	// to print out message in different formated text, u can use .innerHTML property and <h2> tag: var message = "<h2>Hello " + name</h2>; and document.getElementById("content").innerHTML = message;
-	
-	// .querySelector takes a selector
-	if (name === "student") {
-		var title = document.querySelector("#title").textContent; // # selector, coz its CSS selector
-		title += " more and more";
+			document.getElementById("content").textContent = message; // textContent is a property to be able to insert text inside of an element.
+			// to print out message in different formated text, u can use .innerHTML property and <h2> tag: var message = "<h2>Hello " + name</h2>; and document.getElementById("content").innerHTML = message;
+			
+			// .querySelector takes a selector
+			if (name === "student") {
+				var title = document.querySelector("#title").textContent; // # selector, coz its CSS selector. The querySelector method expects a CSS query, so the '#' sign is therefore needed before referencing a value of an 'id' attribute.
+				title += " more and more";
 
-	document.querySelector("#title").textContent = title; // this  needed to update title: title = "student" + "more an more". onclick it prints more and more messages
-	// .querySelector() property u can put h1 element too ( .querySelector("h1") ) and it will return first matched element.actually it will replace first matched element. no printing many mesages like on CSS selector ("#title"). just single replaced message.
-	}
+			document.querySelector("#title").textContent = title; // this  needed to update title: title = "student" + "more an more". onclick it prints more and more messages
+			// .querySelector() property u can put h1 element too ( .querySelector("h1") ) and it will return first matched element.actually it will replace first matched element. no printing many mesages like on CSS selector ("#title"). just single replaced message.
+			}
+		}
 
-}
+		// event handlers are functions that u bind using specific methods to certain events that happens in browser.
 
+		// document.querySelector("button").onclick = sayHello;
 
+	document.querySelector("button").addEventListener("click", sayHello);
 
-
-
+	document.querySelector("body").addEventListener("mousemove", 
+			function (event) {
+				if (event.shiftKey === true) { // shiftKey happens  when shift key is down
+					console.log("X is :" + event.clientX);
+					console.log("Y is :" + event.clientY);
+				}
+			}
+		);
+		}
+);*/
 
 
 
