@@ -1,9 +1,10 @@
 body {
-	background-color: maroon;
+	background-color: black;
 }
 .buttons {
 	border-radius: 5px;
 	color: white;
 	background-color: green;
 	border: 1px solid red;
+	width: 200px;
 }
