@@ -2,8 +2,33 @@
 <html>
 <head>
 	<title>test-test</title>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/css" src="css/style.css"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
+	<script type="text/css" src="/css/style.css"></script>
+	<style type="text/css">
+		body {
+			font-size: normal;
+		}
+		#f1st, #s2nd {
+			border-radius: 5px;
+			background-color: blue;
+			color: white;
+			font-weight: bold;
+
+		}
+
+		#sho, #either {
+			width: 200px;
+			border: 2px solid black;
+			text-align: center;
+		}
+		#will {
+			width: 200px;
+			color: white;
+			background-color: grey;
+			border: 2px solid black;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 		<h1>JavaScript Events - Responding to Evenets</h1>
@@ -16,8 +41,13 @@
 		</div>
 		<br>
 		<div class="buttons">
-			<button type="button">First</button>
-			<button type="button">Second</button>
+			<button type="button" id="f1st">First</button>
+			<button type="button" id="s2nd">Second</button>
+		</div><br>
+		<div class="3pars">
+			<div id="sho">This code shouldn't change</div><br>
+			<div id="will">This will change</div><br>
+			<div id="either">This shouldn't change either</div><br>
 		</div>
 </body>
 </html>
