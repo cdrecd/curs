@@ -9,7 +9,6 @@ var firstName = welcomeMsg("hi") */
 	document.getElementById('output').innerHTML = msg +" event";
 	}*/
 
-// Date() is built-in function and shows date.
 function displayDate() {
 	document.getElementById("demo").innerHTML = Date();
 }
