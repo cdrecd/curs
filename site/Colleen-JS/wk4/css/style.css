@@ -1,0 +1,16 @@
+body {
+	background-color: #fff321;
+	font-size: normal;
+
+}
+input{
+			border:1px solid black;
+		}
+		input:focus{
+			background-color: #E6E6E6;
+		}
+		#nick{
+			margin-left: 4%;
+			display:none;
+			width: 50%;
+		}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>week 4</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<p>terter</p>
+	<!-- <form>
+		<label for="name">Name: </label>
+		<input type="text" id="name" name="name" pattern=".{6,}" title="Six or more characters"><br><br>
+		<label>Email: <input type="email" name="email" placeholder="name@name.com"></label><br><br>
+		<label for="birth">Birth: </label>
+		<input type="date" id="birth" name="birth"><br><br>
+		<label for"url" >URL: </label>
+		<input type="URL" name="URL" id="URL" required=""></input><br><br>
+		<label for="number">NUMBER: </label>
+		<input type="number" min="5" max="100"></input><br><br>
+		<label for="range">Range: </label>
+		<input type="range" min="12" max="54" step="4">55</input><br><br>
+		<input type="submit" value="Send"></input>
+
+	</form> -->
+
+	<!-- input types are: textfield, email, password, radiobutton, checkbox, submit, number, range, color, date, URL.
+	Almost every input type should have a name attribute.
+	
+	attribute: placeholder="" - suggestion, example. 
+	
+	attribute: required - insists to fill information. tag <form novalidate> will ignore all of require attribute. it will be neccessary whenull start testing ur code.
+	
+	attribute: min
+	attribute: max
+	attribute: step
+	attribute: range
+
+	attribute pattern: pattern="[A-Za-z]{3}" only works with the input type equals text and what it does is it forces the user to use specific format
+	<input pattern="regexp"> - regexp Specifies a regular expression that the <input> element's value is checked against. pattern=".{6,}"
+
+
+
+	label tag lets person click on describing text to active all field-->
+<!-- 	<br><br>
+	<form>
+		<label>Preferred email address: 
+			<input type="email" id="email_addr" name="email" value="me@me.com" required></input>
+		</label><br><br>
+		<label>Repated email address:
+			<input type="email" id="email_repeat" name="email2" required onchange="return check()"></input>The onchange event occurs when the value of an element has been changed.
+		</label><br><br>
+		<input type="submit" value="Confirm Emails!" onclick="return check();"> --> <!-- return says: not just run the function check(), but i need to know did it return true of false
+	</form><br><br> -->
+
+<!-- 	<form>
+		Favorite Foods<br>
+		<label><input type="checkbox" name="food" value="pizza">Pizza</label><br>
+		<label><input type="checkbox" name="food" value="Chips">Chips</label><br>
+		<label><input type="checkbox" name="food" value="Kale">Kale</label><br><br>
+		<input type="submit">
+	</form> -->
+
+	<form>
+		<label for="lName">Name:</label>
+		<input type="text" name="lName" id="lName" required></input><br><br/>
+		<label for="yesNick">Nickname?:</label>
+		<input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange="nicknameFunction();"></input><br/><br/>
+		<div id="nick">
+			<label for="nickname">Nickname:</label>
+			<input type="text" name="nickname" id="nickname"><br/>
+		</div><br/>
+		<input type="submit" value="Verify">
+	</form>
+</body>
+</html>

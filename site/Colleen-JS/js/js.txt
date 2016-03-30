@@ -1,0 +1,88 @@
+<script> 
+  document.write("Hello World"); 
+</script>
+
+document - the root of the page
+//finds on page
+document.URL, document.height, document.links, document.bgColor,
+
+element - a node in the tree
+
+nodeList - an array (group) of elements
+document.getElementByTagName('p')
+document.getElementByClassName(class)
+element.innerHTML
+element.style
+element.setAttribute(attribute, value)
+element.removeAttribute(attribute)
+
+in JS data is displayed via:
+-an alert box using window.alert()
+-a prompt using window.prompt()
+-HTML output using document.write()
+-HTML element using innerHTML()
+-the browser console using console.log()
+
+alert("my message here");
+prompt("enter text:");
+document.write("<h1>learn JS<h1>");
+element.innerHTML = "learn JS";  no parentheses!!
+console.log("secret message");
+document.write(document.baseURI); //
+document.write(document.title + "<br>"); //
+
+
+document.getElementById('test').innerHTML = "Hello World"; //test id-is mniSvnelobas anacvlebs Hello World-iT
+
+Variable name can contain letters, numbers, underscores and dollar sign($). it cant start with digit
+
+//updates variable
+var name;
+name = "Collen";
+name = "arcvin"; 
+
+
+Date();
+
+//writes out date
+var date = Date();
+document.write(date);
+
+//displays the URL of the current page.
+window.location.href;
+
+var location = window.location.href;
+document.write(location);
+
+// Displays the name of the host:
+window.location.hostname;
+
+
+window.innerWidth; //
+window.cloesed; //
+document.getElementsByTagName('a') // s - many elements
+
+x = 12
+x == "12"  return true
+x === "12" returns false // adarebs tipebsac
+x !=== 12 return false
+
+function functionName(parameters) {
+	code you want to run
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,36 @@
+body {
+	font-size: normal;
+	}
+
+#f1st, #s2nd {
+	border-radius: 5px;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+
+}
+
+#sho, #either, #will {
+	border-radius: 5px;
+	width: 200px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#will {
+	color: white;
+	background-color: grey;
+}
+
+.closed{
+		display: none;
+
+}
+
+.open{
+		display: block;
+}
+
+img {
+	height: 300px;
+}

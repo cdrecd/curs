@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>test JS</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="script.js"></script>
+		<style type="text/css">
+			.pr{border: 1px solid black;
+				width: 200px;
+				height: 300px;
+				margin-left: 17%;
+				}
+
+			#par {
+				line-height: 100px;
+				width: 500px;
+				height: 100px;
+				margin: 0 auto;
+				margin-bottom: 2%;
+				font-size: 44px;
+				font-family: monospace;
+				border: 1px solid black;
+				background: green;
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body >
+		<p id="par">Hover on</p>
+		<img class="pr" src="../gallery/img_2.jpg" alt="food" onmouseover = "shows(this)" onmouseleave = "document.getElementById('par').innerHTML = 'Hover again';">
+		<img class="pr" src="../gallery/img_3.jpg" alt="chees" onmouseover = "shows(this)"
+		onmouseleave = "document.getElementById('par').innerHTML = 'Hover again';">
+		<img class="pr" src="../gallery/img_4.jpg" alt = "tools" onmouseover = "shows(this)"
+		onmouseleave = "document.getElementById('par').innerHTML = 'Hover again'">
+		<div onclick="message()">Click on this Div will invoke a Javascript function</div>
+
+		<script type="text/javascript">
+			function shows (element) {
+				document.getElementById('par').innerHTML = element.alt;
+			}
+
+			
+
+		</script>
+
+
+
+
+
+
+	</body>
+</html>
