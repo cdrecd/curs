@@ -10,7 +10,7 @@ h2{
 
 }
 
-div{
+/*div{
 	background-color: #0000CC;
 	color:#ffffff;
 	box-sizing: border-box;
@@ -23,6 +23,44 @@ div{
   	margin: 0 auto;
 	margin-top: 50px;
 
+}*/
 
+ol {
+	list-style-type: georgian;
+	list-style-position: outside;
+	list-style: khmer;
 }
+
+nav > a {
+	background-color: red;
+}
+
+#re {
+	border-width: 10px 5px
+}
+
+#tr {
+	list-style-type: upper-roman;
+}
+
+.he {
+	height:50px;
+   padding: 5px 10px;
+   margin: 5px;
+   border: 2px solid black;
+   
+}
+.plain {
+	color: black;
+	font-size: 44px;
+}
+
+
+.fancy  {
+	color: green;
+	font-size: 24px;
+}
+
+
+
 
