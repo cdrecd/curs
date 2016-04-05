@@ -1,0 +1,46 @@
+/*@ media screen and (min-width: 500px) { if screen width is 500px or lower:
+	p.desc {
+		display: block;
+		font-size: 150%;
+	}
+}
+
+*/
+.main {
+	width: 95%;
+	margin: 0 auto;
+
+}
+
+
+@media screen and (min-width: 778px) {
+	.column {
+		display: inline-block;
+		width: 30%;
+		float: left;
+		margin-left: 2%;
+	}
+}
+
+h2 {
+	text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		background-color: red;
+	}
+
+}
+@media screen and (min-width: 400px) {
+	body {
+		background-color: blue;
+	}
+
+}
+@media screen and (min-width: 900px) {
+	body {
+		background-color: green;
+	}
+
+}

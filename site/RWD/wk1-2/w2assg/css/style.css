@@ -1,5 +1,9 @@
-.album_cover {
-	width: 100%;
-	border: 20px solid gray;
-	margin: 20px;
+#caesar {
+	width: 40%;
+}
+
+#abo {
+	font-family: monospace;
+	font-weight: bold;
+	color: maroon;
 }
