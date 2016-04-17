@@ -1,0 +1,59 @@
+caption {
+	background-color: grey;
+	color: white;
+	font-size: 22px;
+	text-transform: uppercase;
+	padding: 1% 0 1% 0;
+	border-radius: 15px 15px 0 0 ;
+
+
+}
+
+table {
+	border: 3px solid black;
+	border-spacing: 0;
+	border-radius: 0 0 15px 15px;
+}
+
+thead tr {
+	color: blue;
+
+}
+
+.old {
+	color: grey;
+
+}
+
+tr td {
+	width: 80px;
+	height: 80px;
+
+	vertical-align:top;
+}
+
+/*colors of even and odd weeks*/
+tr:nth-child(odd) {
+	background-color: #F2F2F2;
+}
+tr:nth-child(even) {
+	background-color: #CDBB79;
+}
+
+/*tr:last-child {
+	border-radius: 0 0 15px 15px;
+}
+*/
+
+/*tr:last-child>td:last-child {
+	border-radius: 0 0 15px 0;
+}
+*/
+span {
+	visibility: hidden;
+}
+
+td:active>span  {
+	visibility: visible;
+	color: maroon;
+}
