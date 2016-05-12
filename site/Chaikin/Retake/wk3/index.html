@@ -8,8 +8,68 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header"> <!-- wrapper class -->
+					<a href="index.html" class="pull-left visible-md visible-lg"> <!-- pull-left class is basically float left. if screen size is medium or large, the element will be visible but but in other cases it wont-->
+						<div id="logo-img" alt="Logo image"> </div>
+					</a>
+
+					<div class="navbar-brand"> <!-- this class is already floated left -->
+						<a href="index.html">
+							<h1>David Chu's China Bistro</h1>
+						</a>
+						<p>
+							<img src="images/star-k-logo.png" alt="Kosher certification">
+							<span>Kosher Certified</span>
+						</p>
+					</div>
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false"> <!-- navbar-toggle class is controlling position of the whole button. collapse class do not exist in the Bootstrap, it is signifying to a Bootstrap plugin (bootstrap.js)that this button is in a collapsed state. once somebody clicks on the button, the collapse class will go away. data-toggle and data-target are html5 attributes that allow JS plugins to get these attributes easly in a standardized way. aria-expanded is for screen readers-->
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span> <!-- all its doing is putting horizontal lines -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div> <!-- End of navbar-header -->
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right"> <!-- nav and navbar-nav classes are saying that im going to be a component of pur navigation bar or navigation. these classes turn un-ordered list into the menu. navbar-right is similar to pull-right/pull-left except this one is specifically fot the navbar. -->
+						<li>
+							<a href="menu-categories.html">
+								<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> <!-- hidden-xs class says: i want this break (br) to go away when screen size is extra small-->
+								Menu
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">
+								Awards
+							</a>
+						</li>
+						<li id="phone" class="hidden-xs">
+							<a href="tel:410-602-5008">
+								<span>410-602-5008</span><div>*We Deliver</div>
+							</a>
+						</li>
+					</ul> <!-- End of #nav-list -->
+				</div> <!-- End of #collapsable-nav -->
+			</div>
+		</nav>
+	</header>
+
+
+
+
 
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
